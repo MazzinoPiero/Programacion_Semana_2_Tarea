@@ -10,14 +10,13 @@ public class Game
     public void Execute()
     {
             Console.WriteLine("Que empiece el Duelo XiaoLing");
-
             player = CreatePlayer();
             enemiesList = new List<object>
             {
-                new EnemyMelee(150, 10),
-                new EnemyRange(200, 15, 3),
-                new EnemyMelee(60, 20),
-                new EnemyRange(80, 8, 2)
+                new EnemyMelee(100, 10),
+                new EnemyRange(180, 10, 3),
+                new EnemyMelee(55, 15),
+                new EnemyRange(70, 6, 2)
             };
 
             Console.WriteLine($"{enemiesList.Count} enemigos estan delante de tuyo");
